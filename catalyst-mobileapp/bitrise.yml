@@ -1,0 +1,54 @@
+---
+format_version: 1.2.0
+default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
+app:
+  envs:
+  - opts:
+      is_expand: false
+    FASTLANE_WORK_DIR: "."
+  - opts:
+      is_expand: false
+    FASTLANE_LANE: deploy
+  - opts:
+      is_expand: true
+    APP_ID: INSERT_APP_ID
+  - opts:
+      is_expand: true
+    MATCH_PASSWORD: INSERT_MATCH_PASSWORD
+  - opts:
+      is_expand: true
+    FASTLANE_PASSWORD: INSERT_MATCH_PASSWORD
+trigger_map:
+- push_branch: release/*
+  workflow: primary
+- push_branch: beta/*
+  workflow: beta
+workflows:
+  primary:
+    steps:
+    - activate-ssh-key@3.1.1:
+        run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
+    - git-clone@4.0.5: {}
+    - certificate-and-profile-installer@1.9.2: {}
+    - fastlane@2.71.0:
+        inputs:
+        - lane: "$FASTLANE_LANE"
+        - work_dir: "$FASTLANE_WORK_DIR"
+    envs:
+    - opts:
+        is_expand: true
+      BRANCH: release
+  beta:
+    steps:
+    - activate-ssh-key@3.1.1:
+        run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
+    - git-clone@4.0.5: {}
+    - certificate-and-profile-installer@1.9.2: {}
+    - fastlane@2.71.0:
+        inputs:
+        - lane: "$FASTLANE_LANE"
+        - work_dir: "$FASTLANE_WORK_DIR"
+    envs:
+    - opts:
+        is_expand: true
+      BRANCH: beta

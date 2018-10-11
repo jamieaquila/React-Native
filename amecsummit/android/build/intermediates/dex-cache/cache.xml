@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Volumes/Data-2/tasks/amecsummit/node_modules/react-native-photo-view/android/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="84b3eb73e4553d4614543e95933ecb8a4ebcd3b2">
+        <dex dex="/Volumes/Data-2/tasks/amecsummit/android/app/build/intermediates/pre-dexed/release/classes_c01b7f561bcc072a5bf2946fecd7d89da60ac7af.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Data-2/tasks/amecsummit/node_modules/react-native-smart-splash-screen/android/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1cf1507f4679058ff6af36adc0937a322dc21427">
+        <dex dex="/Volumes/Data-2/tasks/amecsummit/android/app/build/intermediates/pre-dexed/release/classes_ec71089f1a6aac4d46d5de064e9419da151cee1c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Data-2/tasks/amecsummit/node_modules/react-native-maps/android/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dfe415137a847f99a59cee27485aea5dedd9b09c">
+        <dex dex="/Volumes/Data-2/tasks/amecsummit/android/app/build/intermediates/pre-dexed/release/classes_63c8ee3fa80036c3aa04ea64ec8391b4068d2228.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Data-2/tasks/amecsummit/node_modules/react-native-vector-icons/android/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b319ff9834bbeb9be394687614eb86892699ea14">
+        <dex dex="/Volumes/Data-2/tasks/amecsummit/android/app/build/intermediates/pre-dexed/release/classes_d8f1bfa722c236f7b84d7aa23b5247e79a860286.jar" />
+    </item>
+
+</items>

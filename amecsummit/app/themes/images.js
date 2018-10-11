@@ -1,0 +1,66 @@
+// @flow
+
+// leave off @2x/@3x
+const images = {
+  agenda: require('../images/agenda-copy.png'),
+  agenda_selected: require('../images/agenda.png'),
+  summit: require('../images/summit-o-f-f.png'),
+  summit_selected: require('../images/summit.png'),
+  map: require('../images/map-on-copy.png'),
+  map_selected: require('../images/map.png'),
+  more: require('../images/more.png'),
+  more_selected: require('../images/more_selected.png'),
+
+  logo: require('../images/logo.png'),
+
+  isentiafw: require('../images/logos/isentiafw-1-300-x-82.png'),
+  ninestars: require('../images/logos/ninestars.png'),
+  prime: require('../images/logos/screen-shot-2017-04-10-at-53224-pm.png'),
+  media: require('../images/logos/media-track.png'),
+  carma: require('../images/logos/screen-shot-2017-04-10-at-53428-pm.png'),
+  cision: require('../images/logos/cision.png'),
+  meltwater: require('../images/logos/screen-shot-2017-04-11-at-104130-am.png'),
+  scouting: require('../images/logos/data-scouting.png'),
+  digital: require('../images/logos/digital-nirvana.png'),
+  accessfw: require('../images/logos/media-accessfw.png'),
+  tf: require('../images/logos/screen-shot-2017-04-11-at-104409-am.png'),
+  talkwalker: require('../images/logos/talk-walker.png'),
+  ogilvy: require('../images/logos/Ogilvy Signature.png'),
+  lexis: require('../images/logos/lexis-nexis.png'),
+  cipra: require('../images/logos/c-i-p-r-a-resize-for-contentfw.png'),
+  corporate: require('../images/logos/corporate-excellence.png'),
+  fusion: require('../images/logos/fusion-a-b-c.png'),
+  icco: require('../images/logos/i-c-c-o-sponsor.png'),
+  perhumas: require('../images/logos/perhumas.png'),
+  ipr: require('../images/logos/i-p-sponsor.png'),
+  prca: require('../images/logos/p-r-c-a.png'),
+  malaysia: require('../images/logos/p-r-c-a-malaysia-sponsor.png'),
+  prcai: require('../images/logos/p-r-c-a-i.png'),
+  prinz: require('../images/logos/screen-shot-2017-04-11-at-105211-am.png'),
+  pria: require('../images/logos/p-r-i-a-sponsor.png'),
+  proi: require('../images/logos/p-r-o-i-worldwide.png'),
+  prsp: require('../images/logos/p-r-s-p-sponsor.png'),
+  thailand: require('../images/logos/p-r-thailand.png'),
+  adatapro: require('../images/logos/a-data-pro.png'),
+  Impact: require('../images/logos/Impact.png'),
+
+  maps: require('../images/NoLogo.png'),
+
+  facebook: require('../images/facebook.png'),
+  twitter: require('../images/twitter.png'),
+  tip: require('../images/group.png'),
+  logos: require('../images/group-3.png'),
+
+  Accomadation: require('../images/more/Accomadation-extior.jpg'),
+  Explore: require('../images/more/Explore-Bangkok.jpg'),
+  Noodles: require('../images/more/Noodles.jpg'),
+  Ayutthaya: require('../images/more/Ayutthaya.jpg'),
+  Bangkok_river: require('../images/more/Bangkok-river.jpg'),
+  floating: require('../images/more/floating-Market.jpg'),
+  Jim: require('../images/more/Jim-Thompson.jpg'),
+  Temple: require('../images/more/Temple-of-the-Dawn.jpg'),
+  Wat: require('../images/more/Wat-Pho.jpg'),
+  Weekend: require('../images/more/Weekend-Market.jpg'),
+}
+
+export default images

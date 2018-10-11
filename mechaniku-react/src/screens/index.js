@@ -1,0 +1,64 @@
+import {Navigation} from 'react-native-navigation';
+
+import HomeScreen from './Home'
+import DeteSelectionScreen from './DateSelection'
+import TimeSelectionScreen from './TimeSelection'
+import LoginScreen from './Login'
+import SignupScreen from './Signup'
+import ResetPasswordScreen from './ResetPassword'
+import SelectAddressScreen from './SelectAddress'
+import VehicleDetailsScreen from './VehicleDetail'
+import TypeOfOilScreen from './TypeOfOil'
+import AppointmentScreen from './Appointment'
+import AppointmentPendingScreen from './Appointment/AppointmentPending'
+import AppointmentConfirmedScreen from './Appointment/AppointmentConfirmed'
+import FindAppointmentScreen from './Appointment/FindAppointment'
+import CancelledAppointmentScreen from './Appointment/CancelledAppointment'
+import PaymentScreen from './Payment'
+import AddAddressScreen from './AddAddress'
+import TermsOfServiceScreen from './TermsOfService'
+import LinkBankAccountScreen from './LinkBankAccount'
+import LinkingSuccessScreen from './LinkBankAccount/LinkingSuccess'
+import AdminUsersScreen from './AdminUsers'
+import AllMechanicsScreen from './AdminUsers/AllMechanics'
+import AllAppointmentsScreen from './AdminUsers/AllAppointments'
+import MasterCalendarScreen from './AdminUsers/MasterCalendar'
+import SettingScreen from './AdminUsers/Setting'
+import MechanicAppointmentScreen from './MechanicUser'
+import NotificationScreen from './TermsOfService/Notification'
+import BankAccountScreen from './TermsOfService/BankAccount'
+import TermsOfServiceAlertScreen from './TermsOfService/TermsOfServiceAlert'
+import UnlinkingBankScreen from './LinkBankAccount/UnlinkingBank'
+
+export function registerScreens() {
+  Navigation.registerComponent('mechaniku.HomeScreen', () => HomeScreen);
+  Navigation.registerComponent('mechaniku.DeteSelectionScreen', () => DeteSelectionScreen);  
+  Navigation.registerComponent('mechaniku.TimeSelectionScreen', () => TimeSelectionScreen);  
+  Navigation.registerComponent('mechaniku.LoginScreen', () => LoginScreen);
+  Navigation.registerComponent('mechaniku.SignupScreen', () => SignupScreen);
+  Navigation.registerComponent('mechaniku.ResetPasswordScreen', () => ResetPasswordScreen);
+  Navigation.registerComponent('mechaniku.SelectAddressScreen', () => SelectAddressScreen);
+  Navigation.registerComponent('mechaniku.VehicleDetailsScreen', () => VehicleDetailsScreen);
+  Navigation.registerComponent('mechaniku.TypeOfOilScreen', () => TypeOfOilScreen);  
+  Navigation.registerComponent('mechaniku.AppointmentScreen', () => AppointmentScreen);  
+  Navigation.registerComponent('mechaniku.PaymentScreen', () => PaymentScreen);  
+  Navigation.registerComponent('mechaniku.AppointmentPendingScreen', () => AppointmentPendingScreen);  
+  Navigation.registerComponent('mechaniku.AppointmentConfirmedScreen', () => AppointmentConfirmedScreen);  
+  Navigation.registerComponent('mechaniku.FindAppointmentScreen', () => FindAppointmentScreen);  
+  Navigation.registerComponent('mechaniku.CancelledAppointmentScreen', () => CancelledAppointmentScreen);  
+  Navigation.registerComponent('mechaniku.AddAddressScreen', () => AddAddressScreen);  
+  Navigation.registerComponent('mechaniku.TermsOfServiceScreen', () => TermsOfServiceScreen);  
+  Navigation.registerComponent('mechaniku.LinkBankAccountScreen', () => LinkBankAccountScreen);
+  Navigation.registerComponent('mechaniku.LinkingSuccessScreen', () => LinkingSuccessScreen);
+  Navigation.registerComponent('mechaniku.AdminUsersScreen', () => AdminUsersScreen);
+  Navigation.registerComponent('mechaniku.AllMechanicsScreen', () => AllMechanicsScreen);
+  Navigation.registerComponent('mechaniku.AllAppointmentsScreen', () => AllAppointmentsScreen);
+  Navigation.registerComponent('mechaniku.MasterCalendarScreen', () => MasterCalendarScreen);
+  Navigation.registerComponent('mechaniku.SettingScreen', () => SettingScreen);
+  Navigation.registerComponent('mechaniku.TermsOfServiceAlertScreen', () => TermsOfServiceAlertScreen);
+  Navigation.registerComponent('mechaniku.NotificationScreen', () => NotificationScreen);
+  Navigation.registerComponent('mechaniku.BankAccountScreen', () => BankAccountScreen);
+  Navigation.registerComponent('mechaniku.UnlinkingBankScreen', () => UnlinkingBankScreen);
+  Navigation.registerComponent('mechaniku.MechanicAppointmentScreen', () => MechanicAppointmentScreen);
+}
+

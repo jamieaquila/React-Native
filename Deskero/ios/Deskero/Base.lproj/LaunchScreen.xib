@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="c1m-Pp-VMq">
+                    <rect key="frame" x="128" y="138" width="225" height="204"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="c1m-Pp-VMq" secondAttribute="height" multiplier="75:68" id="JcO-8D-vFk"/>
+                        <constraint firstAttribute="width" constant="225" id="YZA-8w-SZv"/>
+                        <constraint firstAttribute="height" constant="204" id="nxZ-XR-BjH"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.88235294117647056" green="0.30196078431372547" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="c1m-Pp-VMq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="e1e-1Q-2vI"/>
+                <constraint firstItem="c1m-Pp-VMq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="h8f-ts-zEq"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="548" y="455"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Logo" width="450" height="408"/>
+    </resources>
+</document>

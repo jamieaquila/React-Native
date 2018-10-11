@@ -1,0 +1,60 @@
+{
+  "name": "Mekaniku",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "postinstall": "node ./scripts/postinstall.js",
+    "start": "watchman watch-del-all && (adb reverse tcp:8081 tcp:8081 || true) && node node_modules/react-native/local-cli/cli.js start --reset-cache",
+    "xcode": "open ios/mechaniku.xcodeproj",
+    "android": "cd android && ./gradlew installDebug",
+    "e2e": "detox test --configuration ios.sim.debug",
+    "e2e-release": "detox test --configuration ios.sim.release"
+  },
+  "dependencies": {
+    "apsl-react-native-button": "^3.1.0",
+    "axios": "^0.17.0",
+    "moment": "^2.19.4",
+    "react": "16.0.0-alpha.12",
+    "react-native": "0.45.1",
+    "react-native-animatable": "^1.1.0",
+    "react-native-dialogbox": "^0.6.8",
+    "react-native-elements": "^0.18.2",
+    "react-native-fcm": "^11.2.0",
+    "react-native-geocoder": "^0.5.0",
+    "react-native-google-places": "^2.4.2",
+    "react-native-google-places-autocomplete": "^1.3.6",
+    "react-native-infinite-scroll": "^1.0.6",
+    "react-native-infinite-scroll-view": "^0.4.3",
+    "react-native-keyboard-aware-scroll-view": "^0.4.1",
+    "react-native-loading-spinner-overlay": "^0.5.2",
+    "react-native-maps": "^0.17.1",
+    "react-native-masked-text": "^1.6.5",
+    "react-native-modal-dropdown": "^0.5.0",
+    "react-native-navigation": "1.1.409",
+    "react-native-permissions": "^1.1.1",
+    "react-native-push-notification": "^3.0.2",
+    "react-native-scrollable-tab-view": "^0.8.0",
+    "react-native-vector-icons": "^4.4.2",
+    "superagent": "^3.8.1",
+    "tipsi-stripe": "^4.5.4"
+  },
+  "devDependencies": {
+    "detox": "^5.0.0",
+    "mocha": "^3.4.2"
+  },
+  "detox": {
+    "specs": "test/e2e",
+    "configurations": {
+      "ios.sim.debug": {
+        "binaryPath": "ios/DerivedData/mechaniku/Build/Products/Debug-iphonesimulator/mechaniku.app",
+        "type": "ios.simulator",
+        "name": "iPhone 8"
+      },
+      "ios.sim.release": {
+        "binaryPath": "ios/DerivedData/mechaniku/Build/Products/Release-iphonesimulator/mechaniku.app",
+        "type": "ios.simulator",
+        "name": "iPhone 8"
+      }
+    }
+  }
+}

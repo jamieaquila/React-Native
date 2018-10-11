@@ -1,0 +1,9 @@
+{
+  "presets": ["react-native", "babel-preset-expo"],
+  "plugins": [
+    "transform-react-jsx-source",
+    ["babel-plugin-module-alias", [
+      { "src": ".", "expose": "@" }
+    ]]
+  ]
+}

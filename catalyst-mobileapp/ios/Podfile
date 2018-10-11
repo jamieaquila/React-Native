@@ -1,0 +1,24 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '9.0'
+# Uncomment this line if you're using Swift
+use_frameworks!
+
+target 'BuzznogCatalyst' do
+  pod 'HockeySDK'
+  pod 'Flurry-iOS-SDK/FlurrySDK'
+  pod 'Spotify-iOS-SDK'
+end
+
+target 'BuzznogCatalystTests' do
+
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['EXPANDED_CODE_SIGN_IDENTITY'] = ""
+      config.build_settings['CODE_SIGNING_REQUIRED'] = "NO"
+      config.build_settings['CODE_SIGNING_ALLOWED'] = "NO"
+    end
+  end
+end

@@ -1,0 +1,413 @@
+fastlane_version "1.97.2"
+
+@build_number = `git rev-list HEAD --count`.strip!
+@version = `node -e "console.log(require('../package.json').version);"`.strip!
+@git_tag = "v#{@version}+#{@build_number}"
+@changelog = `../bin/get-changelog.sh`
+@plist_location = 'ios/BuzznogCatalyst/Info.plist'
+
+desc "Deploys an app specified with APP_ID env variable or with the `app:APP_ID` option."
+lane :deploy do |options|
+  environment
+
+  app_id ||= options[:app] ||= ENV['APP_ID'] ||= nil
+  raise "App ID not specified." if app_id.nil?
+
+  raise "A branch must be specified" if ENV['BRANCH'].nil?
+
+  apps = download(url: "https://api-v1.buzznog.com/Apps?access_token=qXchxpcGRRtUed2aZq7GBP8T9w9xyD8mzk6t4Qrj&where={\"id\": \"#{options[:app]}\"}")
+  raise "Specified app #{options[:app]} not found." if apps.empty?
+
+  sh "npm i"
+  sh "cd ../ios && pod install --verbose"
+
+  apps.each do |app|
+    puts "Deploying #{app['name']}."
+
+    if app['settings']['build']['ios']['appNameBeta'].downcase().include? "$$"
+      app['settings']['build']['ios']['appNameBeta'].gsub!('$', '$$')
+      puts "Replaced $ in #{app['settings']['build']['ios']['appNameBeta']}"
+    end
+
+    download_image_assets(app)
+
+    if options[:skip_provisioning].nil? then
+      provision(
+        app: app['id']
+      )
+    end
+
+    if ENV['BRANCH'].eql? "beta" then
+      release_ios_beta(app)
+      release_android_beta(app)
+    end
+
+    if ENV['BRANCH'].eql? "release" then
+      release_ios_release(app)
+      release_android_release(app)
+    end
+  end
+
+  add_git_tag(
+    tag: @git_tag,
+    message: @changelog,
+    force: true
+  )
+  push_git_tags(
+    force: true
+  )
+end
+
+desc "Attempts to deploy all apps in the database."
+lane :deploy_all do |options|
+  environment
+
+  puts "No app specified, deploying all apps."
+  apps = download(url: "https://api-v1.buzznog.com/Apps?access_token=qXchxpcGRRtUed2aZq7GBP8T9w9xyD8mzk6t4Qrj")
+
+  sh "npm i"
+  sh "cd ../ios && pod install --verbose"
+
+  puts "Deploying #{apps.size} apps."
+
+  apps.each do |app|
+    puts "Deploying #{app['name']}."
+
+    download_image_assets(app)
+
+    if options[:skip_provisioning].nil? then
+      provision(
+        app: app['id']
+      )
+    end
+
+    if ENV['BRANCH'].eql? "beta" then
+      release_ios_beta(app)
+      release_android_beta(app)
+      _beta(app)
+    end
+
+    if ENV['BRANCH'].eql? "release" then
+      release_ios_release(app)
+      release_android_release(app)
+    end
+  end
+
+  add_git_tag(
+    tag: @git_tag,
+    message: @changelog,
+    force: true
+  )
+  push_git_tags(
+    force: true
+  )
+end
+
+desc "Creating a code signing certificate and provisioning profiles for an app specified with APP_ID env variable or with the `app:APP_ID` option."
+lane :provision do |options|
+  environment
+
+  app_id ||= options[:app] ||= ENV['APP_ID'] ||= nil
+  raise "App ID not specified." if app_id.nil?
+
+  apps = download(url: "https://api-v1.buzznog.com/Apps?access_token=qXchxpcGRRtUed2aZq7GBP8T9w9xyD8mzk6t4Qrj&where={\"id\": \"#{options[:app]}\"}")
+  raise "Specified app #{options[:app]} not found." if apps.empty?
+
+  apps.each do |app|
+    puts "Provisioning #{app['name']}."
+
+    if ENV['BRANCH'].eql? "beta" then
+      ENV['MATCH_FORCE_ENTERPRISE']="1"
+      # Beta
+      produce(
+        app_name: app['settings']['build']['ios']['appNameBeta'],
+        app_identifier: app['settings']['build']['ios']['appIdentifierBeta'],
+        language: 'English',
+        app_version: @version,
+        sku: app['settings']['build']['ios']['appIdentifierBeta'],
+        skip_itc: true,
+        team_id: ENV['TEAM_ID_ENTERPRISE']
+      )
+      match(
+        type: 'enterprise',
+        app_identifier: app['settings']['build']['ios']['appIdentifierBeta'],
+        team_id: ENV['TEAM_ID_ENTERPRISE']
+      )
+    end
+
+    if ENV['BRANCH'].eql? "release" then
+      ENV['MATCH_FORCE_ENTERPRISE']=nil
+      # Release
+      produce(
+        app_name: app['settings']['build']['ios']['appName'],
+        app_identifier: app['settings']['build']['ios']['appIdentifier'],
+        language: 'English',
+        app_version: @version,
+        sku: app['settings']['build']['ios']['appIdentifier'],
+        team_id: ENV['TEAM_ID']
+      )
+      match(
+        type: 'appstore',
+        app_identifier: app['settings']['build']['ios']['appIdentifier'],
+        team_id: ENV['TEAM_ID']
+      )
+    end
+
+  end
+
+end
+
+desc "Submit a new iOS beta build to HockeyApp."
+private_lane :release_ios_beta do |app|
+  raise "You must specify a CODE_SIGNING_IDENTITY_ENTERPRISE environment variable to deploy." if ENV['CODE_SIGNING_IDENTITY_ENTERPRISE'].nil?
+  raise "You must specify a TEAM_ID_ENTERPRISE environment variable to deploy." if ENV['TEAM_ID_ENTERPRISE'].nil?
+  raise "You must specify a HOCKEY_API_TOKEN environment variable to deploy." if ENV['HOCKEY_API_TOKEN'].nil?
+  raise "You must specify a CODE_PUSH_DEPLOYMENT_KEY_BETA environment variable to deploy." if ENV['CODE_PUSH_DEPLOYMENT_KEY_BETA'].nil?
+
+  prepare_ios_build(
+    app_id: app['id'],
+    app_name: app['settings']['build']['ios']['appNameBeta'],
+    app_identifier: app['settings']['build']['ios']['appIdentifierBeta'],
+    app_url_scheme: app['settings']['urlScheme'],
+    code_push_deployment_key: ENV['CODE_PUSH_DEPLOYMENT_KEY_BETA'],
+    hockey_app_id: app['settings']['build']['ios']['hockeyAppIdBeta'],
+    flurry_app_id: app['settings']['build']['ios']['flurryAppId']
+  )
+
+  match(
+    type: "enterprise",
+    team_id: ENV['TEAM_ID_ENTERPRISE'],
+    git_url: "git@bitbucket.org:buzznog/certificates.git",
+    app_identifier: app['settings']['build']['ios']['appIdentifierBeta'],
+    readonly: true
+  )
+
+  PROVISIONING_PROFILE_SPECIFIER="sigh_#{app['settings']['build']['ios']['appIdentifierBeta']}_enterprise_profile-name"
+  gym(
+    workspace: "ios/BuzznogCatalyst.xcworkspace",
+    clean: true,
+    scheme: "BuzznogCatalyst",
+    codesigning_identity: ENV['CODE_SIGNING_IDENTITY_ENTERPRISE'],
+    xcargs: "DEVELOPMENT_TEAM='#{ENV['TEAM_ID_ENTERPRISE']}' PROVISIONING_PROFILE_SPECIFIER='#{ENV[PROVISIONING_PROFILE_SPECIFIER]}'"
+  )
+
+  hockey(
+    api_token: ENV['HOCKEY_API_TOKEN'],
+    notes: @changelog,
+    strategy: 'replace',
+    notify: '1'
+  )
+
+  clean_build_artifacts
+end
+
+
+desc "Submit a new iOS build to App Store."
+private_lane :release_ios_release do |app|
+  raise "You must specify a CODE_SIGNING_IDENTITY environment variable to deploy." if ENV['CODE_SIGNING_IDENTITY'].nil?
+  raise "You must specify a TEAM_ID environment variable to deploy." if ENV['TEAM_ID'].nil?
+  raise "You must specify a CODE_PUSH_DEPLOYMENT_KEY_RELEASE environment variable to deploy." if ENV['CODE_PUSH_DEPLOYMENT_KEY_RELEASE'].nil?
+
+  prepare_ios_build(
+    app_id: app['id'],
+    app_name: app['settings']['build']['ios']['appName'],
+    app_identifier: app['settings']['build']['ios']['appIdentifier'],
+    app_url_scheme: app['settings']['urlScheme'],
+    code_push_deployment_key: ENV['CODE_PUSH_DEPLOYMENT_KEY_RELEASE'],
+    hockey_app_id: app['settings']['build']['ios']['hockeyAppId'],
+    flurry_app_id: app['settings']['build']['ios']['flurryAppId']
+  )
+
+  match(
+    type: "appstore",
+    team_id: ENV['TEAM_ID'],
+    git_url: "git@bitbucket.org:buzznog/certificates.git",
+    app_identifier: app['settings']['build']['ios']['appIdentifier']
+  )
+
+  PROVISIONING_PROFILE_SPECIFIER="sigh_#{app['settings']['build']['ios']['appIdentifier']}_appstore_profile-name"
+  gym(
+    workspace: "ios/BuzznogCatalyst.xcworkspace",
+    scheme: "BuzznogCatalyst",
+    clean: true,
+    codesigning_identity: ENV['CODE_SIGNING_IDENTITY'],
+    xcargs: "DEVELOPMENT_TEAM='#{ENV['TEAM_ID']}' PROVISIONING_PROFILE_SPECIFIER='#{ENV[PROVISIONING_PROFILE_SPECIFIER]}'"
+  )
+
+  hockey(
+    api_token: ENV['HOCKEY_API_TOKEN'],
+    notes: @changelog,
+    strategy: 'replace',
+    release_type: '3',
+    notify: '1'
+  )
+
+  begin
+    deliver(
+      force: true,
+      skip_screenshots: true,
+      skip_metadata: true
+    )
+  rescue => ex
+    UI.error("Deploying to App Store failed: #{ex}")
+  end
+
+  clean_build_artifacts
+end
+
+private_lane :prepare_ios_build do |options|
+  sh "cd .. && git clean -d -f ./ios"
+  sh "cd .. && git checkout HEAD -- ./ios"
+  sh "cd .. && git checkout HEAD -- .env"
+
+  raise "You must specify a APP_NAME_BETA environment variable to deploy." if options[:app_name].nil?
+  raise "You must specify a APP_ID environment variable to deploy." if options[:app_id].nil?
+  raise "You must specify a APP_IDENTIFIER environment variable to deploy." if options[:app_identifier].nil?
+  raise "You must specify a CODE_PUSH_DEPLOYMENT_KEY environment variable to deploy." if options[:code_push_deployment_key].nil?
+  raise "You must specify a HOCKEY_APP_ID environment variable to deploy." if options[:hockey_app_id].nil?
+  raise "You must specify a APP_URL_SCHEME environment variable to deploy." if options[:app_url_scheme].nil?
+
+  sh "cp -rf appicon/ios/AppIcon.appiconset ../ios/BuzznogCatalyst/Images.xcassets"
+  sh "cp -rf launchimage/ios/LaunchScreen.imageset ../ios/BuzznogCatalyst/Images.xcassets"
+
+  sh "cd .. && sed -i '' 's/RUa1UwjBQ7v8jkgn2tEpWNUOtm3kVDSqy954Igh1/#{options[:app_id]}/g' ./.env"
+  sh "cd .. && sed -i '' 's/Whitney Paige Debug/#{options[:app_name]}/g' ./ios/BuzznogCatalyst.xcodeproj/project.pbxproj"
+  sh "cd .. && sed -i '' 's/com.buzznog.catalyst.WhitneyPaige/#{options[:app_identifier]}/g' ./ios/BuzznogCatalyst.xcodeproj/project.pbxproj"
+  set_info_plist_value(key: 'CFBundleDisplayName', value: "#{options[:app_name]}", path: @plist_location)
+  set_info_plist_value(key: 'CFBundleIdentifier', value: "#{options[:app_identifier]}", path: @plist_location)
+  set_info_plist_value(key: 'CFBundleShortVersionString', value: @version, path: @plist_location)
+  set_info_plist_value(key: 'CFBundleVersion', value: @build_number, path: @plist_location)
+  set_info_plist_value(key: 'CodePushDeploymentKey', value: options[:app_identifier], path: @plist_location)
+  set_info_plist_value(key: 'HOCKEYAPP_APP_ID', value: options[:hockey_app_id], path: @plist_location)
+  set_info_plist_value(key: 'FLURRY_APP_ID', value: options[:flurry_app_id], path: @plist_location)
+  set_info_plist_value(
+    key: 'CFBundleURLTypes',
+    value:  [ { :CFBundleTypeRole => 'Editor', :CFBundleURLName => "#{options[:app_identifier]}", :CFBundleURLSchemes => [ options[:app_url_scheme] ] } ],
+    path: @plist_location
+  )
+end
+
+desc "Submit a new Android beta build to HockeyApp."
+private_lane :release_android_beta do |app|
+
+  prepare_android_build(
+    app_id: app['id'],
+    app_name: app['settings']['build']['android']['appNameBeta'],
+    app_identifier: app['settings']['build']['android']['appIdentifierBeta'],
+    app_url_scheme: app['settings']['urlScheme'],
+    flurry_app_id: app['settings']['build']['android']['flurryAppId']
+  )
+
+  gradle(
+    task: 'assemble',
+    build_type: 'Release',
+    project_dir: './android'
+  )
+
+  hockey(
+    ipa: './android/app/build/outputs/apk/app-release.apk',
+    dsym: false,
+    api_token: ENV['HOCKEY_API_TOKEN'],
+    notes: @changelog,
+    strategy: 'replace',
+    notify: '1'
+  )
+
+  clean_build_artifacts
+end
+
+desc "Submit a new Android build to Google Play Store."
+private_lane :release_android_release do |app|
+  prepare_android_build(
+    app_id: app['id'],
+    app_name: app['settings']['build']['android']['appName'],
+    app_identifier: app['settings']['build']['android']['appIdentifier'],
+    app_url_scheme: app['settings']['urlScheme'],
+    flurry_app_id: app['settings']['build']['android']['flurryAppId']
+  )
+
+  gradle(
+    task: 'assemble',
+    build_type: 'Release',
+    project_dir: './android'
+  )
+
+  hockey(
+    ipa: './android/app/build/outputs/apk/app-release.apk',
+    dsym: false,
+    api_token: ENV['HOCKEY_API_TOKEN'],
+    notes: @changelog,
+    strategy: 'replace',
+    release_type: '3',
+    notify: '1'
+  )
+
+  begin
+    supply(
+      apk: './android/app/build/outputs/apk/app-release.apk',
+      skip_upload_metadata: true,
+      skip_upload_images: true,
+      skip_upload_screenshots: true,
+      package_name: app['settings']['build']['android']['appIdentifier'],
+      json_key: './fastlane/google_play_key.json'
+    )
+  rescue => ex
+    UI.error("Deploying to Google Play Store failed: #{ex}")
+  end
+
+  clean_build_artifacts
+end
+
+private_lane :prepare_android_build do |options|
+  sh "cd .. && git clean -d -f ./android"
+  sh "cd .. && git checkout HEAD -- ./android"
+  sh "cd .. && git checkout HEAD -- .env"
+
+  raise "You must specify a APP_ID environment variable to deploy." if options[:app_id].nil?
+  raise "You must specify a APP_NAME environment variable to deploy." if options[:app_name].nil?
+  raise "You must specify a APP_IDENTIFIER environment variable to deploy." if options[:app_identifier].nil?
+  raise "You must specify a APP_URL_SCHEME environment variable to deploy." if options[:app_url_scheme].nil?
+
+  sh "cp -rf appicon/android/ ../android/app/src/main/res"
+  sh "cp -f google-services.json ../android/app/google-services.json"
+
+  sh "cd .. && sed -i '' 's/RUa1UwjBQ7v8jkgn2tEpWNUOtm3kVDSqy954Igh1/#{options[:app_id]}/g' ./.env"
+  sh "cd .. && bin/set-android-app-identifier.sh #{options[:app_identifier]}"
+  sh "cd .. && sed -i '' 's/bncwhitneypaige/#{options[:app_url_scheme]}/g' ./android/app/src/main/AndroidManifest.xml"
+  sh "cd .. && sed -i '' 's/\"Whitney Paige Debug\"/\"#{options[:app_name]}\"/g' ./android/app/build.gradle"
+  sh "cd .. && sed -i '' 's/versionCode 1/versionCode #{@build_number}/g' ./android/app/build.gradle"
+  sh "cd .. && sed -i '' 's/versionName \"1.0\"/versionName \"#{@version}\"/g' ./android/app/build.gradle"
+  sh "cd .. && sed -i '' 's/FLURRY_APP_ID/#{options[:flurry_app_id]}/g' ./android/app/src/main/res/values/strings.xml"
+end
+
+private_lane :download_image_assets do |app|
+  sh "wget https://cdn.buzznog.com/buzznogapi/apps/#{app['id']}/fastlane/appicon.zip"
+  sh "unzip -o appicon.zip && rm appicon.zip"
+  sh "wget https://cdn.buzznog.com/buzznogapi/apps/#{app['id']}/fastlane/launchimage.zip"
+  sh "unzip -o launchimage.zip && rm launchimage.zip"
+  sh "wget https://cdn.buzznog.com/buzznogapi/apps/#{app['id']}/SNS/google-services.json"
+
+end
+
+desc "Shows the current environmental variables."
+lane :environment do
+  puts "App ID: #{ENV['APP_ID']}"
+  puts "Team ID: #{ENV['TEAM_ID']}"
+  puts "Team ID Enterprise: #{ENV['TEAM_ID_ENTERPRISE']}"
+  puts "Code Signing Identity: #{ENV['CODE_SIGNING_IDENTITY']}"
+  puts "Code Signing Identity Enterprise: #{ENV['CODE_SIGNING_IDENTITY_ENTERPRISE']}"
+  puts "Build Number: #{@build_number}"
+  puts "Version: #{@version}"
+  puts "Git Tag: #{@git_tag}"
+  puts "Changelog: #{@changelog}"
+  puts "HockeyApp API Token: #{ENV['HOCKEY_API_TOKEN']}"
+  puts ".plist location: #{@plist_location}"
+  puts "CodePush Deployment Key (App Store): #{ENV['CODE_PUSH_DEPLOYMENT_KEY_RELEASE']}"
+  puts "CodePush Deployment Key (Beta): #{ENV['CODE_PUSH_DEPLOYMENT_KEY_BETA']}"
+end
+
+# More information about multiple platforms in fastlane: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Platforms.md
+# All available actions: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Actions.md
+
+# fastlane reports which actions are used
+# No personal data is recorded. Learn more at https://github.com/fastlane/enhancer

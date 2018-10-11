@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Enzym-proto</string>
+    <string name="facebook_app_id">224161691512688</string>
+    <string name="oauth_facebook_view_name">Enzym-proto Facebook Oauth</string>
+    <string name="oauth_facebook_view_scheme">fb224161691512688</string>
+    <string name="oauth_google_view_name">Enzym-proto Google Oauth</string>
+    <string name="oauth_google_view_scheme">com.enzym-proto</string>
+</resources>

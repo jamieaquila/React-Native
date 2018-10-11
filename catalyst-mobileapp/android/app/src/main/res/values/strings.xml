@@ -1,0 +1,6 @@
+<resources>
+    <string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey"></string>
+    <string name="social_login">sociallogin</string>
+    <string name="RNB_GOOGLE_PLAY_LICENSE_KEY">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgwF2w150r7W+G3icueVQTeBnipThAcaj8L1xWTPwhIrUaam7fZao7GPbgcvzd21IxVYvuzJEYaxf8ek2nJRi/nWQhqg2j93m7FO0N8MgHlB3aSnGGGRNxqrEJIq34P5sPHf+2FJGiQogqjKYVRLlkgrdJGZgIVEUgda4bL5wEvdoopgNsnPFq3S8c00+LoIqMz1HTx7gmKjS7y8APThMx6X53S28zRmvIKJlIMJLwB1ZdHtbb57WDuQS5LaWkM7qqhSz26NXnwKqvrWP7LfyhUqRg+ppOZfeM62n7y5m7ks5FL/ipxx5AxH8B85ClBlw0St+COp/2Mmk71OKrZEM/QIDAQAB</string>
+    <string name="flurry_app_id">FLURRY_APP_ID</string>
+</resources>

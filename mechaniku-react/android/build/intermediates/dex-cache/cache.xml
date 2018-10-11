@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/admin/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.1_f37e95579d4a3f3552050a9363750900bf28d866/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.facebook.fresco-drawee-1.0.1_4a7cd4891012d457ba315455374bc3d855e1b9dc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a819aae4f0c711e50b4fd633922a3c1a176cb51e">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-9.0.0_ef7587367bf5c16819d3472b69410ff255c7211d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.android.support/transition/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.3.1_8ab17748875095015f78675b7f201b2e722faa54/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="0dc8ab07eeceda5e99b305c8069765056b6e5c9d">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.0.0_84e287804156d5fb51aadae5c7d03607f7c0fd14/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.3.1_9136e9ef3d3af5adbe098b91cd98ac845f78aa9d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.3.1_74db797038e651fb7ceb0bec567bc7e053b101e7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/11.0.4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="2430e711762a749feb00b3d64858ca4768251b9d">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-11.0.4_1013193d2eacf0bcc6c8123695ea53ff6d98e3a3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/admin/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-tasks-1.4.0_3eb4716e38c36af994cfeb934b15309b535ed112/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.3.1_b70af0f69724ce0ec1f3edbc9b637423b1be2836/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.facebook.fresco-fbcore-1.0.1_84c59a64659b3e74ec3431dd472a9689ec1be904/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.45.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="0d3e48e200296061415952a358fad487e129adaa">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.facebook.react-react-native-0.45.1_dcb8caf2e34bf168ea3e71790a6abcb728994360/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.3.1_7ef32de8d400d49ee7395e44285e67f5fbc2c366/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_b34e478f1d3b0968136b07fec4fdfe77a767e70e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/me.leolin/ShortcutBadger/1.1.17/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="248218f163235e6d2a81188eaa1db0ec61193055">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/me.leolin-ShortcutBadger-1.1.17_1fda4580bf94a1bca751278a92f026cc890d493f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/admin/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/staticlayout-proxy-1.0_04d004389179e9e40a23b23e1388da712ce9c796/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.3.1_68251808b41fff2d5e4d55bc143428b6841bacc6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.aurelhubert/ahbottomnavigation/2.0.6/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c8ba41bea7f78f8bdf3a803b9d08eb3fff416706">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.aurelhubert-ahbottomnavigation-2.0.6_7a183591304b05ee08760ebe1f743500d3728303/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-multidex-1.0.1_eeb6f2290540a7340035c8abe04bff1ecf739674/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.3.1_de51f24413815248ed1ab816293646efe59e05c1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.facebook.fresco-imagepipeline-1.0.1_332915ff8b8d1c7cbdb2d46689f53dee4762e7ed/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/11.0.4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f47f4d5bdfd7d7bf330945b8a7ccce4ab437a710">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-11.0.4_09c9f243ff451a78b9a36fdc67fa85030c9c13b5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.3.1_ce6cc7404a77ee00e0c804478cdc0c2093886497/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_5579192a7c998e3b90cb4160e53d178d4cdcf287/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/11.0.4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ed87ccdcb70c17d71ba4e6e4ac16afa62d3c49fb">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-11.0.4_9d9e86e4f4396fbde4558c173c68f96702d7b6ec/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.facebook.fresco-fresco-1.0.1_789b740d28925d6dfb4fd87451b7c5169541b02d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="28af0e8e5b92c1f844d769948e662072add9726d">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_3e6556697810fc8736c258fe1f815ee643e48032/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/admin/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.9.0_394b119fa9937e0fa841f0319ec98f3878d3b3cf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/admin/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.4.1/63994437f62bc861bc20c605d12962f7246116d1/okhttp-urlconnection-3.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="63994437f62bc861bc20c605d12962f7246116d1">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-urlconnection-3.4.1_a0aa753a890eb5c0c25b93d5f6ae85244da3a1ae/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/admin/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/jsr305-3.0.0_3c882547cf051a4bd4428b802f45c2ee274126f4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/11.0.4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="364364bf77b4a71afc5930fc3ae57b3f0eea637c">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-11.0.4_852f2eac5e4b968c1e9aa5dcf805affa467c8ac1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/admin/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.4.1/8ace66ef7002d98f633377c9e67daeeb196d8c3b/okhttp-ws-3.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8ace66ef7002d98f633377c9e67daeeb196d8c3b">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-ws-3.4.1_3bd2c497626ec9b1ce1d8bf8eccc34a454fdbc61/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.3.1_9a225518e23561113079e5af56a161085fa54b57/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.3.1_ab2394a77a984c4f870033d562b112a72e1475ad/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6f65c144283b31b4b9a70e6e7aa4c4a1c897d4b8">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.0.0_66be2f2f1bc001b7d49e4f001a2b8caffe50b75d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.balysv.materialmenu/material-menu-toolbar/1.5.4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="55d7bf547c88cb7c8c7c5cdbf3b06dd66c9750f8">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.balysv.materialmenu-material-menu-toolbar-1.5.4_6b7c6f7dc411c5c4ee6f9444473a2439c66a0bf1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8363da152f4b1643c71f33cfb9c29c4bee54d005">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_27315815cea549dc29cffe339c228ab4ee203db4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/admin/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.4.1_cb42be6d199f9913a802c6a546393cf2f0471883/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.facebook.soloader-soloader-0.1.0_6533b241f4844315f90e31b73818b3f427209e84/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/11.0.4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="43e9789bd3240271265ab30ce1be9f224843f5a8">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-11.0.4_2d08df6db019eeafc81a877ab25924bb05083316/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.45.1/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/infer-annotations-4.0_e0815b3541dfb40b4fa06ab908cc3b39088c0e49/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/admin/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/javax.inject-1_d082dc14909ece9d78a55c3d1c2ea134216e75c3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.3.1_df432d1f70f23bba1512fe7e37332036e0645404/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.3.1_e96ce05beb8296a5e98068c66898a3422c7a96e5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/admin/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/library-2.4.0_967e1cae8105d681f66c0722cea5ef615784aa74/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.facebook.fresco-imagepipeline-base-1.0.1_bb56bd773b334d54539650ca67cbd6ec147020c7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.balysv.materialmenu/material-menu/1.5.4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="1f6ff1728c297524e82b875ce2dfda946f4bca41">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.balysv.materialmenu-material-menu-1.5.4_8a7605e8c0592bf44420c7aa26519f0dafc08d79/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4ef8ab5fee042023018249474bc93bd4b2b9c17e">
+        <dex dex="/Volumes/DATA/work/ReactNative/mechaniku-react/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.0.0_0c4d575b1a4b0b0c3478520a61f714799a5a00e7/classes.dex" />
+    </item>
+
+</items>

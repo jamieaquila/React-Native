@@ -1,0 +1,133 @@
+apply plugin: "com.android.application"
+apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
+
+import groovy.swing.SwingBuilder
+import com.android.build.OutputFile
+
+project.ext.react = [
+    entryFile: "index.js"
+]
+
+apply from: "../../node_modules/react-native/react.gradle"
+
+def enableSeparateBuildPerCPUArchitecture = true
+
+def enableProguardInReleaseBuilds = false
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+
+    defaultConfig {
+        applicationId "com.enzym_proto"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode project.env.get("ANDROID_VERSION_CODE").toInteger()
+        versionName "proto-" + project.env.get("ANDROID_VERSION_CODE")
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+        ndk {
+            //abiFilters "armeabi-v7a", "x86"
+        }
+    }
+    signingConfigs {
+        release {
+            storeFile file(project.property("enzym.keystorePath"))
+            storePassword 'xxx'
+            keyAlias 'enzym_proto'
+            keyPassword 'xxx'
+        }
+    }
+    splits {
+        abi {
+            reset()
+            enable enableSeparateBuildPerCPUArchitecture
+            universalApk false  // If true, also generate a universal APK
+            include "armeabi-v7a", "x86"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled enableProguardInReleaseBuilds
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            signingConfig signingConfigs.release
+        }
+    }
+    // applicationVariants are e.g. debug, release
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            // For each separate APK per architecture, set a unique version code as described here:
+            // http://tools.android.com/tech-docs/new-build-system/user-guide/apk-splits
+            def versionCodes = ["armeabi-v7a":1, "x86":2]
+            def abi = output.getFilter(OutputFile.ABI)
+            if (abi != null) {  // null for the universal-debug, universal-release variants
+                output.versionCodeOverride =
+                        versionCodes.get(abi) * 1048576 + defaultConfig.versionCode
+            }
+        }
+    }
+}
+
+gradle.taskGraph.whenReady { taskGraph ->
+  if(taskGraph.hasTask(':app:assembleRelease')) {
+    def storePassword = ''
+    def keyPassword = ''
+    if (System.console() == null) {
+        new SwingBuilder().edt {
+            dialog(modal: true, title: 'Enter password', alwaysOnTop: true, resizable: false, locationRelativeTo: null, pack: true, show: true) {
+                vbox {
+                    label(text: "Please enter store passphrase:")
+                    def input1 = passwordField()
+                    label(text: "Please enter key passphrase:")
+                    def input2 = passwordField()
+                    button(defaultButton: true, text: 'OK', actionPerformed: {
+                        storePassword = input1.password;
+                        keyPassword = input2.password;
+                        dispose();
+                    })
+                }
+            }
+        }
+    } else {
+        storePassword = System.console().readPassword("\nPlease enter store passphrase: ")
+        keyPassword = System.console().readPassword("\nPlease enter key passphrase: ")
+    }
+    if (storePassword.size() <= 0 || keyPassword.size() <= 0) {
+        throw new InvalidUserDataException("You must enter the passwords to proceed.")
+    }
+    storePassword = new String(storePassword)
+    keyPassword = new String(keyPassword)
+
+    android.signingConfigs.release.storePassword = storePassword
+    android.signingConfigs.release.keyPassword = keyPassword
+  }
+}
+
+
+dependencies {
+    compile project(':react-native-image-crop-picker')
+    implementation project(':react-native-keep-awake')
+    implementation project(':react-native-svg')
+    implementation (project(':react-native-camera'))
+    implementation project(':react-native-firebase')
+    implementation project(':react-native-config')
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "com.android.support:appcompat-v7:27.1.1"
+    implementation "com.facebook.react:react-native:+"  // From node_modules
+    implementation project(':mapbox-react-native-mapbox-gl')
+    implementation 'com.google.android.gms:play-services-base:15.0.1'
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+    implementation "com.google.firebase:firebase-messaging:17.1.0"
+    implementation 'com.facebook.android:facebook-login:4.34.0'
+    implementation 'com.android.support:multidex:1.0.3'
+
+}
+
+// Run this once to be able to run the application with BUCK
+// puts all compile dependencies into folder libs for BUCK to use
+task copyDownloadableDepsToLibs(type: Copy) {
+    from configurations.compile
+    into 'libs'
+}
+
+apply plugin: 'com.google.gms.google-services'

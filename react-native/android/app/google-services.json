@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "387199826751",
+    "firebase_url": "https://enzym-proto.firebaseio.com",
+    "project_id": "enzym-proto",
+    "storage_bucket": "enzym-proto.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387199826751:android:6f52bb4c358f2b26",
+        "android_client_info": {
+          "package_name": "com.enzym_proto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "387199826751-213qi76fnt5nskctp8vdq73e3oh5672f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_iNSzgnZX9GIH2I7MPN-QAOwfzTRGjIo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

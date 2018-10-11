@@ -1,0 +1,26 @@
+PODS:
+  - Flurry-iOS-SDK/FlurrySDK (8.4.0)
+  - HockeySDK (5.1.2):
+    - HockeySDK/DefaultLib (= 5.1.2)
+  - HockeySDK/DefaultLib (5.1.2)
+  - Spotify-iOS-SDK (0.25.0):
+    - Spotify-iOS-SDK/Authentication (= 0.25.0)
+    - Spotify-iOS-SDK/Metadata (= 0.25.0)
+    - Spotify-iOS-SDK/Playback (= 0.25.0)
+  - Spotify-iOS-SDK/Authentication (0.25.0)
+  - Spotify-iOS-SDK/Metadata (0.25.0)
+  - Spotify-iOS-SDK/Playback (0.25.0)
+
+DEPENDENCIES:
+  - Flurry-iOS-SDK/FlurrySDK
+  - HockeySDK
+  - Spotify-iOS-SDK
+
+SPEC CHECKSUMS:
+  Flurry-iOS-SDK: 0c4488af4e4289e2678f81755d3e9c204c0e8bba
+  HockeySDK: 38b7e2726af1ea86ae97ce4b5de33ab0817e3500
+  Spotify-iOS-SDK: 58d4092b225578623dd17029f3c7e7042ac3ef6e
+
+PODFILE CHECKSUM: d828b1511653bbbf7d3655b934cd008e3f7d6e63
+
+COCOAPODS: 1.4.0

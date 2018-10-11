@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.android.support-design-25.3.1_3b424702c276b55210272130fb57b9e51ed7a167.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/deskero/react-native-image-crop-picker/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="333491e33e4c87fe95ae4e8457bc321ffdf6db14">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/deskero-react-native-image-crop-picker-unspecified_406353d866adf2c1a5089141d80aa734c7c34346.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/bolts-tasks-1.4.0_3eb4716e38c36af994cfeb934b15309b535ed112.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/15.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="4d4d98a0428b2e620e6b4a228ef9f7cb2f0debd2">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-tasks-15.0.1_611f8c5c9a7592769dff7f61f0d24eae98b5f278.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/15.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="32ac362d6f6a636ab4f737a90cda4a35c9402025">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-gcm-15.0.1_dbc5d19145d14fba01cb737fca4516a90969d1ce.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_3f56fabdb63e29a665d4c11ffa5363237bcd914e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/26.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="233f60a165ae622c8b36731502ebbda0f65e1930">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.android.support-support-core-utils-26.1.0_687bedaf1cb46ea7a6fd319fd0e95ec2df010271.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.android.support-recyclerview-v7-25.3.1_2c5a72ec7c4b27872a124b1fc12f9ea1c5812d2a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.4.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="13430a12bb2eb82b397f10f61fe1f6989279c6bd">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.crashlytics.sdk.android-answers-1.4.1_7da435eacd9628eece5453356490b6687a85552d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/deskero/react-native-webview-bridge/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2d69c490ff52eb212499683621716d060ce7387e">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/deskero-react-native-webview-bridge-unspecified_c70146f3f123f89a2c5aa1e4eb31fdf900da6cc7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/id.zelory/compressor/2.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6b1555196d65ffa1174f6f49efb2f278905f537a">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/id.zelory-compressor-2.1.0_5667576e75910f58cf4efafd43a518168de9329d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/deskero/react-native-sound/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="924edf6a69e9923477366acd624d17b6389d8131">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/deskero-react-native-sound-unspecified_f036f1cc93a716f69f956ee65bd9f054bbea683f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/deskero/react-native-cardview/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="0429a9b10bc2a5f05eef6de6fa12460556a05794">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/deskero-react-native-cardview-unspecified_54b19a9f909337d617569f6c227c170b3365a8a7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.yalantis/ucrop/2.2.0-native/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="24497dd7ccdf848dde14335011e715dcc1110275">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.yalantis-ucrop-2.2.0-native_7543499a5662b5e99524b4933b63a9f29ad40760.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/deskero/react-native-file-opener/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="1be4a1f369cb26cdf0e8b87879b8341468023627">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/deskero-react-native-file-opener-unspecified_0edb6db324efdcd2940a532f02a5e869df654bbf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/deskero/react-native-fabric/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e5afd2f59c11bcc8ebd5a1f7a89d43cd8d9a9365">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/deskero-react-native-fabric-unspecified_65c38f7345437092b78e7f525304b9a4a8a562cf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.facebook.fresco-imagepipeline-base-1.0.1_3f1d5f5b5bed2cc55b0d1d4bfa1f544f43608412.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/26.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2442771a5590dd4eb4bce00c2e9dca9e22e4c963">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.android.support-support-compat-26.1.0_f2026a9b83b8e34e61ce705807116e852c6fa61e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.android.support-animated-vector-drawable-25.3.1_e7fd25472246981a211b7dd143f39b1a7d7bfcc1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/okio-1.9.0_394b119fa9937e0fa841f0319ec98f3878d3b3cf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.4.1/63994437f62bc861bc20c605d12962f7246116d1/okhttp-urlconnection-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="63994437f62bc861bc20c605d12962f7246116d1">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/okhttp-urlconnection-3.4.1_a0aa753a890eb5c0c25b93d5f6ae85244da3a1ae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.aurelhubert/ahbottomnavigation/2.0.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c8ba41bea7f78f8bdf3a803b9d08eb3fff416706">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.aurelhubert-ahbottomnavigation-2.0.6_3a329dd8e87eb7d682877038e0df7fde26480d16.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/deskero/react-native-i18n/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="89075ff9a907af843ffb29e0c882230eb331739d">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/deskero-react-native-i18n-unspecified_e48614f293d12d5b480cfed6b6ecde5a050da89e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/26.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f97cf85b0fe70d37a705111dafa6b1b418ea1650">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.android.support-support-media-compat-26.1.0_2e2caaf563f3198602a2a51902ba6f8fdec71fc8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-stats/15.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c1e9d140d3260619ce2fa991d30b14b531d61dec">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-stats-15.0.1_397def3be6d0d5bb8aa6e643136fcfe16d370de7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.android.support-appcompat-v7-25.3.1_0fba3dbba3370ff874af69248ae0d2a6fbf6c40a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/15.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d8fe6d91310b54734f454dd490c3c869f6290576">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-basement-15.0.1_12c2c5b3f45a1bb265547388bd972c0d634619d7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/26.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="7efef32744ca4a436492d5cf28c08698cc2af256">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.android.support-support-fragment-26.1.0_735f98a2aaf727ba81b97df3bcb1f357cace4839.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/deskero/react-native-version-number/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="de80a4e63ce285314c2c60d02468fc20d2b1c6fb">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/deskero-react-native-version-number-unspecified_68c369c585c96641678616c784ba2ed43700c73f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="39ae02ce40c3ac828abbf780ce0ff5d7a28b7d6a">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.android.support-cardview-v7-23.0.1_5bef86dc0ba71c5093bd8d75c4551dfb5d2c7e55.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/deskero/react-native-image-picker/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="9f95540d3b14aed0250ba28dd07beece0df87598">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/deskero-react-native-image-picker-unspecified_9b9efc6ebb5439160ddab1fd583c5eaf1c8f202c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/library-2.4.0_967e1cae8105d681f66c0722cea5ef615784aa74.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.1.0/814258103cf26a15fcc26ecce35f5b7d24b73f8/support-annotations-26.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="0814258103cf26a15fcc26ecce35f5b7d24b73f8">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/support-annotations-26.1.0_dc90aeee492a9d3f173ffd6803b6d55fea2f0c12.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.facebook.fresco-drawee-1.0.1_5f771b53669bbe578ddcea1c559184bb8ab04199.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics/2.8.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c5f97ff33d838393c21cd3ef28c65a43c422ae5d">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.crashlytics.sdk.android-crashlytics-2.8.0_ea047a4b6b0ecdfe3268ee6c5803fbd2f7f1e8fa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.balysv.materialmenu/material-menu/1.5.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="1f6ff1728c297524e82b875ce2dfda946f4bca41">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.balysv.materialmenu-material-menu-1.5.4_c88bd733bd6262290d6e371470788096bd1d8906.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.facebook.soloader-soloader-0.1.0_b61f9fa28651027e98ff67c84a8c5b9b23662e36.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.4.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d5ee4b7829f6ec48400e678cc969176f455cb14c">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/io.fabric.sdk.android-fabric-1.4.1_e03778830338653075ed4d5b6d33fbab5a3a15c9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.45.1/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/infer-annotations-4.0_0625b814686e34d85a8c0da423a5b4f7acefc72f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/me.leolin/ShortcutBadger/1.1.8/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="531c33d3697000a05e9493a2d0f09ba41fa114d3">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/me.leolin-ShortcutBadger-1.1.8_7356ff798a78a501c1a83eb69f36e09714a7a204.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.android.support-support-vector-drawable-25.3.1_9b6244346235f321397cb24c4171efdf04858a58.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.facebook.fresco-fresco-1.0.1_51e6b5906e3faad73a77da652dbf45075d9761c6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a2d487452376193fc8c103dd2b9bd5f2b1b44563">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/common-1.0.0_55ac46d232bc3a7fe0da54155cc3acf0560d7f98.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/deskero/react-native-document-picker/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="7fb6469ebee8229adbaeb2f156504c1160a8ec17">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/deskero-react-native-document-picker-unspecified_9292fd8f0f51bc5f39f2e13e6b271dfa2888f945.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/15.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6d468b69c3baff6635f9a7d09a558ced41fdbdf4">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-iid-15.0.1_475b7b87f75605ea2cc2643683b5a1a84e4f3ff8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.android.support/transition/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.android.support-transition-25.3.1_3e20133c8c541a8910f448e6adb1af8e112d6940.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/staticlayout-proxy-1.0_04d004389179e9e40a23b23e1388da712ce9c796.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/deskero/react-native-push-notification/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2e3e5a199c7209bab2dd53b85eefb664494af06d">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/deskero-react-native-push-notification-unspecified_3bf28e16b908357c0a07b304a2351dc8948ee75b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.0/e414a4cb28434e25c4f6aa71426eb20cf4874ae9/common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e414a4cb28434e25c4f6aa71426eb20cf4874ae9">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/common-1.0.0_352ea9ba79e7e45f4fb3408cf8b41d4c3172ed76.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.balysv.materialmenu/material-menu-toolbar/1.5.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="55d7bf547c88cb7c8c7c5cdbf3b06dd66c9750f8">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.balysv.materialmenu-material-menu-toolbar-1.5.4_bc6f4221c6c4df5300837b91f7e34f64fdfe99ec.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/deskero/react-native-fetch-blob/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="5aca1188aec5f45a7580589b8537e9a8a4d9a86f">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/deskero-react-native-fetch-blob-unspecified_a18cec998038416de8d8776dd485aaad0fc452cf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/deskero/react-native-vector-icons/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f2cf527de8d0bd35d72088fafea02395ba4a9eec">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/deskero-react-native-vector-icons-unspecified_854bdd68027d3d365a331ddc30a906d7a79457a7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/jsr305-3.0.0_3c882547cf051a4bd4428b802f45c2ee274126f4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.45.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="0d3e48e200296061415952a358fad487e129adaa">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.facebook.react-react-native-0.45.1_2158ba8f94e418e6d18f11976d860c20625caadb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.facebook.fresco-fbcore-1.0.1_87ec6914ea2a2d62c72b9727cc95b221549669b3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.0/14b8c877d98005ba3941c9257cfe09f6ed0e0d74/reactive-streams-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="14b8c877d98005ba3941c9257cfe09f6ed0e0d74">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/reactive-streams-1.0.0_debc19650c2611248f049832fbb0f5a88461b26e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/deskero/react-native-fs/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c01eb21b3207b3fec0f27830e63a27280d16c649">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/deskero-react-native-fs-unspecified_15d8cf8f55c39a5fde1eecc34445e2fd91d28789.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.0/2fdf84dedcaaeabb9d70cde9dbb8aad4eccb80a1/rxjava-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2fdf84dedcaaeabb9d70cde9dbb8aad4eccb80a1">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/rxjava-2.1.0_59fe761751e706804bd5dee28e434f3186aa71e7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.facebook.fresco-imagepipeline-1.0.1_9a252ea9aa5343edf616315a6df44ae6137131db.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics-core/2.5.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="05ed069a339f56b2f9f52bd986dfcb1cb508a2fa">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.crashlytics.sdk.android-crashlytics-core-2.5.0_51907825c24dd0e1dced6e5d8fae0b0f0c0afcbf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.crashlytics.sdk.android/beta/1.2.7/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="5a743d0934e90e7f26d75a2463142c4b884b2981">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.crashlytics.sdk.android-beta-1.2.7_c0b6b42f21e255f24462d37079978d8b89a51521.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/15.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="8d813c05361147f6f515f749df19223cd6256314">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-base-15.0.1_e96bdcbbb44e03551ee373435991902975f554e6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/deskero/react-native-file-picker/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="092d2620c0a2428aaeee4cc0fb0c3fa518192510">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/deskero-react-native-file-picker-unspecified_213ef4f6596812fa952b71f5722960fe9485d966.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.4.1/8ace66ef7002d98f633377c9e67daeeb196d8c3b/okhttp-ws-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="8ace66ef7002d98f633377c9e67daeeb196d8c3b">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/okhttp-ws-3.4.1_3bd2c497626ec9b1ce1d8bf8eccc34a454fdbc61.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/okhttp-3.4.1_cb42be6d199f9913a802c6a546393cf2f0471883.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/26.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="508f50705b4fde51a16259f29c854201a3044516">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.android.support-support-core-ui-26.1.0_1ed758ba2508bed8031d78d6a5032af9b8d7267a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/deskero/react-native-navigation/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="7e9c72cc270dfeb477575ad4df8179d30f710a4e">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/deskero-react-native-navigation-unspecified_8cced2f0b3c808b5289b142003e2f221f09209c5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/26.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.android.support-support-v4-26.1.0_4597629a68c6fa6fec5d16a7e48ad79b380e5429.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/android.arch.lifecycle/runtime/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b62fdc4cfef174c1e456014195c83fa7de7dc041">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/android.arch.lifecycle-runtime-1.0.0_2a7053c44df9b9fead5fe1b43bf4081719421231.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/javax.inject-1_d082dc14909ece9d78a55c3d1c2ea134216e75c3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_5e052dd318ec6f640040b324f5de8d054a375567.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/deskero/react-native-svg/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="42f922f1339ebca0c00ca3dc4c794924a07f0496">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/deskero-react-native-svg-unspecified_e96f579ae7890fdcecfc449a1abd01688673621a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/exploded-aar/deskero/react-native-device-info/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2e4336ffc2b7653868134d7f6f8b28523ef54645">
+        <dex dex="/Volumes/DATA/work/reactNative/Deskero/android/app/build/intermediates/pre-dexed/release/deskero-react-native-device-info-unspecified_64fd128980cacbbec461b9e272305b3f259ea07b.jar" />
+    </item>
+
+</items>
